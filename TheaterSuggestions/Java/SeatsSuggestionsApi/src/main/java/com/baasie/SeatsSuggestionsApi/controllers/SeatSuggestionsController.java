@@ -25,7 +25,7 @@ public class SeatSuggestionsController {
         this.iProvideCurrentReservations = iProvideCurrentReservations;
     }
 
-    // GET api/SeatsSuggestions?showId=5&party=3
+    // GET api/SeatsSuggestions?showId=3&party=3
     @GetMapping(produces = "application/json")
     public ResponseEntity<SuggestionsMade> makeSuggestions(@RequestParam String showId, @RequestParam int party) {
 
