@@ -21,6 +21,6 @@ public class ReservationSeatsController {
     // GET api/data_for_reservation_seats/5
     @GetMapping(value = "/{showId}", produces = "application/json")
     public ReservedSeatsDto get(@PathVariable String showId) {
-        return provideCurrentReservations.getReservedSeats(new ShowId(showId));
+        return provideCurrentReservations.getReservedSeats(showId);
     }
 }
